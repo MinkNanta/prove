@@ -3,22 +3,26 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    fontSize: {
-      "9xl": ["144px", { lineHeight: "144px" }],
-      "8xl": ["128px", { lineHeight: "128px" }],
-      "7xl": ["72px", { lineHeight: "72px" }],
-      "6xl": ["60px", { lineHeight: "60px" }],
-      "5xl": ["48px", { lineHeight: "58px", letterSpacing: "-0.04em" }],
-      "4xl": ["30px", { lineHeight: "36px" }],
-      "3xl": ["30px", { lineHeight: "36px" }],
-      "2xl": ["24px", { lineHeight: "32px" }],
-      lg: ["20px", { lineHeight: "28px" }],
-      x: ["18px", { lineHeight: "28px" }],
-      base: ["16px", { lineHeight: "24px" }],
-      sm: ["14px", { lineHeight: "16px" }],
-      xs: ["12px", { lineHeight: "14px" }],
-    },
     extend: {
+      fontSize: {
+        "display-5xl": ["48px", { lineHeight: "50px" }],
+        "display-4xl": ["36px"],
+        "heading-3xl": ["30px"],
+        "heading-2xl": ["24px"],
+        "heading-xl": ["20px"],
+        "body-lg": ["18px"],
+        "body-base": ["16px"],
+        "CTA-medium": ["16px"],
+        "CTA-small": ["14px"],
+        "label-medium": ["14px"],
+        "label-small": ["12px"],
+      },
+      borderRadius: {
+        xl: "40px",
+      },
+      boxShadow: {
+        card: "0px 16px 48px rgba(102, 61, 20, 0.21)",
+      },
       colors: {
         base: {
           500: "#CFD1D2",
